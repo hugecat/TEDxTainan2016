@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('.home-article-item').hover(
+    function () {
+        $('.hides').animate({ "top": "-=200px" }, "slow" );
+    },
+    function () {
+        $('.hides').animate({ "top": "+=200px" }, "slow" );
+    });
+});</script>
+</head>
+<body>
+    <div class="navbar" id="mobile-menu">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/tedlogo.png" alt="" style="height:50px;">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">專欄文章</a></li>
+                    <li><a href="#">活動資訊</a></li>
+                    <li><a href="#">講者影片</a></li>
+                    <li><a href="#">關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav-menu" id="desktop-menu">
+        <div class="nav-logo-category">
+            <div class="nav-logo">
+                <a href="">
+                    <img src="img/tedlogo.png" alt="">
+                </a>
+                <div class="nav-category">
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <a href="">
+                                專欄文章
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                活動資訊
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                講者影片
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                關於我們
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <a href="https://www.facebook.com/TEDxTainan" target="_blank"><img src="img/icon-fb.png" id="icon"></a>
+                    <a href="https://www.facebook.com/TEDxTainan" target="_blank"><img src="img/icon-fb.png" id="icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="news-row">
+            <div class="news-row-item">
+                <ul class="topic">
+                  <li id="box1"><a href="#">A</a></li><li id="box2"><a href="#">B</a></li>
+                  <li id="box3"><a href="#">C</a></li><li id="box4"><a href="#">D</a></li>
+                  <li id="box5"><a href="#">E</a></li><li id="box6"><a href="#">F</a></li>
+                </ul>
+            </div><div class="news-row-item" style="vertical-align:top;">
+              <div class="intro" id="A">IntroA</div>
+              <div class="intro" id="B">IntroB</div>
+              <div class="intro" id="C">IntroC</div>
+              <div class="intro" id="D">IntroD</div>
+              <div class="intro" id="E">IntroE</div>
+              <div class="intro" id="F">IntroF</div>
+            </div>
+        </div>
+        <div class="news-row">
+            <div class="news-row-item">
+                <div id="hotarticle">
+                    <h1 class="hotarticle-title">熱門文章</h1>
+                    <div style="width:100%;height:250px;background:black">
+                    </div>
+                     <h5 class="hotarticle-description">介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹</h5>
+                </div>
+            </div><div class="news-row-item" style="vertical-align:top;">
+                <div class="article">
+                    <div class="pic">
+                        <div class="test"></div>
+                    </div><div class="description">ss</div>
+                </div>
+                <div class="article">
+                     <div class="pic">
+                        <div class="test"></div>
+                    </div><div class="description">ss</div>
+                </div>
+                <div class="article">
+                     <div class="pic">
+                        <div class="test"></div>
+                    </div><div class="description">ss</div>
+                </div>
+                <div class="article">
+                    <div class="pic">
+                        <div class="test"></div>
+                    </div><div class="description">ss</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-article-part">
+        <div class="home-article-items">
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <a>
+                    <img src="img/category1.jpg" height="300" style="width:100%">
+                </a>
+                <div class="home-article-item-title"><p>Test</p></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+            <div class="home-article-item">
+                <div style="width:100%;height:100%;background:black"></div>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;height:195px;background-color:#4f4f4f">
+      <div class="nav-logo">
+        <a  href="#"><img src="img/tedlogo.png" alt=""></a>
+      </div>
+    </div>
+</body>
+
+</html>

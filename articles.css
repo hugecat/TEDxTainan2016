@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+#MaxWidth {
+  max-width: 100%;
+  perspective-origin: center;
+
+}
+
+.grid {
+  max-width: 1487px;
+
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 368px;
+  height: 227.5px;
+  margin: 30px auto;
+  /* vertical gutter */
+  margin-bottom: 1px;
+  background: gray;
+}
+
+
+
+.grid-item--height2 { height: 460px; }

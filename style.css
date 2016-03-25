@@ -1,0 +1,349 @@
+/* application.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+a,a:hover{
+  text-decoration:none;
+}
+
+a,div,p{
+  word-break: break-word;
+}
+
+html,body{
+  height:100%;
+}
+
+
+/* 桌面版選單 */
+.nav-menu {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    height:60px;
+    background:rgba(0, 0, 0, 0.7);
+}
+
+.nav-logo-category {
+  height: 60px;
+}
+
+.nav-logo {
+  margin-left: 50px;
+  padding-top: 7px;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.nav-category {
+  display: inline-block;
+  margin-left: 85px;
+}
+
+.menu-items {
+  vertical-align: middle;
+}
+
+.menu-item {
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 120px;
+}
+
+.menu-item a {
+  color:white;
+  display: inline-block;
+}
+
+.menu-item a:hover {
+  text-decoration:none;
+  padding-bottom:4px;
+  border-bottom:3px solid red;
+
+}
+
+.selected-menu-item {
+  border-bottom: solid 2px;
+  padding-bottom : 5px;
+}
+
+.right {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+
+#icon{
+  height:25px;
+  margin-right:10px;
+}
+
+/*手機版選單*/
+
+#mobile-menu{
+  display:none;
+}
+
+.navbar{
+  background:rgba(0, 0, 0, 0.7);
+  min-height:60px;
+  margin-bottom:0px;
+}
+
+.navbar-brand{
+  padding-top:5px;
+}
+
+.navbar-brand img{
+  height:50px;
+}
+
+.navbar-toggle{
+  margin-top:13px;
+}
+
+.icon-bar{
+  background:white;
+}
+
+.navbar-nav>li>a{
+  text-shadow:none;
+  color:white;
+}
+
+@media screen and (max-width:768px){
+  #mobile-menu{
+    display:block;
+  }
+
+  #desktop-menu{
+    display:none;
+  }
+}
+
+/* article.scss */
+
+/* 首頁最上方 顯示分類文章區塊 */
+.news{
+  width:100%;
+  background-image:image-url("article/category1.jpg");
+  background-size:cover;
+}
+
+.news-row{
+  width:100%;
+}
+.news-row-item{
+  width:50%;
+  display:inline-block;
+}
+
+/* 最熱門文章 */
+#hotarticle{
+  width:60%;
+  margin:80px auto;
+  height:300px;
+}
+
+.hotarticle-title,.hotarticle-description{
+  color:white;
+}
+
+.hotarticle-img{
+  width:100%;
+  height:100%;
+}
+
+.hotarticle-title{
+  font-size:32px;
+  padding:10px;
+}
+
+/* 單篇文章區塊 */
+
+.article{
+  height:100px;
+  margin:10px 20px;
+}
+
+/* 單篇文章照片區塊 */
+
+.pic{
+  width:25%;
+  height:100%;
+  display:inline-block;
+}
+
+/* 單篇文章照片 */
+.pic-img{
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  background:black;
+}
+
+/* 單篇文章照片介紹 */
+
+.description{
+  padding:10px;
+  vertical-align:top;
+  width:75%;
+  display:inline-block;
+  color:white;
+}
+
+/* 專欄文章分類 */
+.topic{
+  width:100%;
+}
+
+.topic li{
+  margin:30px 0px;
+  text-align:center;
+  width:50%;
+  display:inline-block;
+  font-size:32px;
+}
+
+.topic li a{
+  color:black;
+}
+
+/* 各分類附屬的引言 */
+
+.intro{
+  padding:40px 10px;
+  width:80%;
+  height:100px;
+  margin:40px auto;
+  color:white;
+  background:rgba(113, 113, 113, 0.5);
+  text-align:center;
+}
+
+/* 首頁下方文章區塊 */
+
+.home-article-part{
+  background:rgb(247,247,247);
+  width:100%;
+}
+
+.home-article-items{
+  width:85%;
+  display:block;
+  margin:0 auto;
+  text-align:center;
+}
+
+.home-article-item{
+  position:relative;
+  overflow: hidden;
+  display:inline-block;
+  width:30%;
+  height:300px;
+  margin:50px 10px;
+}
+
+.home-article-item-img{
+  width:100%;
+  height:100%;
+}
+
+.home-article-item-title{
+  background:rgba(255, 0, 0, 0.3);
+  width:100%;
+  height:150px;
+  position: absolute;
+  top:400px;
+  left: 0;
+}
+
+
+
+@media screen and (max-width: 1035px){
+  .nav-menu{
+    height:150px;
+  }
+  .nav-category {
+    display: block;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 39px;
+  }
+
+  .news-row-item{
+    width:100%;
+  }
+
+}
+
+@media screen and (max-width:768px){
+
+  #hotarticle{
+    width:90%;
+  }
+
+  .pic{
+    width:40%;
+  }
+
+  .description{
+    width:60%;
+  }
+
+  .home-article{
+    width:90%;
+  }
+
+  .home-article-item{
+    width:100%;
+    margin:50px 0px;
+  }
+
+}
