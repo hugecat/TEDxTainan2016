@@ -1,44 +1,64 @@
 $(document).ready(function(){
 
-  $("#B").hide();
-  $("#C").hide();
-  $("#D").hide();
-  $("#E").hide();
-  $("#F").hide();
+  $(".b").hide();
+  $(".c").hide();
+  $(".d").hide();
+  $(".e").hide();
+  $(".f").hide();
 
-  $("#box1").mouseenter(function(){
-    $(".intro").fadeOut(10);
-    $("#A").fadeIn(1000);
+  var prev=".a";
+
+  $("#A").mouseenter(function(){
+    if(prev!=".a"){
+      $(prev).hide();
+      $(".a").show();
+      prev=".a";
+    }
   });
 
 
-  $("#box2").mouseenter(function(){
-    $(".intro").fadeOut(10);
-    $("#B").fadeIn(1000);
+  $("#B").mouseenter(function(){
+    if(prev!=".b"){
+      $(prev).hide();
+      $(".b").show();
+      prev=".b";
+    }
   });
 
 
-  $("#box3").mouseenter(function(){
-    $(".intro").fadeOut(10);
-    $("#C").fadeIn(1000);
+  $("#C").mouseenter(function(){
+    if(prev!=".c"){
+      $(prev).hide();
+      $(".c").show();
+      prev=".c";
+    }
   });
 
 
-  $("#box4").mouseenter(function(){
-    $(".intro").fadeOut(10);
-    $("#D").fadeIn(1000);
+  $("#D").mouseenter(function(){
+    if(prev!=".d"){
+      $(prev).hide();
+      $(".d").show();
+      prev=".d";
+    }
   });
 
 
-  $("#box5").mouseenter(function(){
-    $(".intro").fadeOut(10);
-    $("#E").fadeIn(1000);
+  $("#E").mouseenter(function(){
+    if(prev!=".e"){
+      $(prev).hide();
+      $(".e").show();
+      prev=".e";
+    }
   });
 
 
-  $("#box6").mouseenter(function(){
-    $(".intro").fadeOut(10);
-    $("#F").fadeIn(1000);
+  $("#F").mouseenter(function(){
+    if(prev!=".f"){
+      $(prev).hide();
+      $(".f").show();
+      prev=".f";
+    }
   });
 
 
